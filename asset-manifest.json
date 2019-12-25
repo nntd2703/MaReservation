@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MaReservation/static/css/main.d1b05096.chunk.css",
+    "main.js": "/MaReservation/static/js/main.6369e2e6.chunk.js",
+    "main.js.map": "/MaReservation/static/js/main.6369e2e6.chunk.js.map",
+    "runtime-main.js": "/MaReservation/static/js/runtime-main.2615405d.js",
+    "runtime-main.js.map": "/MaReservation/static/js/runtime-main.2615405d.js.map",
+    "static/js/2.586e01c6.chunk.js": "/MaReservation/static/js/2.586e01c6.chunk.js",
+    "static/js/2.586e01c6.chunk.js.map": "/MaReservation/static/js/2.586e01c6.chunk.js.map",
+    "index.html": "/MaReservation/index.html",
+    "precache-manifest.8a5b01ef97078180ff5cd0ee8c49ab78.js": "/MaReservation/precache-manifest.8a5b01ef97078180ff5cd0ee8c49ab78.js",
+    "service-worker.js": "/MaReservation/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/MaReservation/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.586e01c6.chunk.js.LICENSE": "/MaReservation/static/js/2.586e01c6.chunk.js.LICENSE",
+    "static/media/logo.svg": "/MaReservation/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2615405d.js",
+    "static/js/2.586e01c6.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.6369e2e6.chunk.js"
+  ]
+}
