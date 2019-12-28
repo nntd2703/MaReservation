@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94f414ce87a62412defaf5d127e68e6e",
+    "revision": "118f5d2be4b1a7a68ef53fcc468a402a",
     "url": "/MaReservation/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MaReservation/static/css/2.6f18afc6.chunk.css"
   },
   {
-    "revision": "0dd32f67827e022ac620",
+    "revision": "7a96e620e8871696358b",
     "url": "/MaReservation/static/css/main.a51f1b44.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MaReservation/static/js/2.71eb9ec3.chunk.js.LICENSE"
   },
   {
-    "revision": "0dd32f67827e022ac620",
-    "url": "/MaReservation/static/js/main.44d26276.chunk.js"
+    "revision": "7a96e620e8871696358b",
+    "url": "/MaReservation/static/js/main.70428850.chunk.js"
   },
   {
     "revision": "71cf21de84b917881d6e",
