@@ -12,11 +12,11 @@ class Reservation extends Component {
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
-        sm: { span: 6 }
+        sm: { span: 8 }
       },
       wrapperCol: {
         xs: { span: 24 },
-        sm: { span: 12 }
+        sm: { span: 16 }
       }
     };
 
@@ -46,9 +46,9 @@ class Reservation extends Component {
     };
 
     return (
-      <Row justify="center" style={{ minHeight: "100vh" }}>
+      <Row type="flex" justify="center"style={{ minHeight: "100vh" }}>
         <Form {...formItemLayout}>
-          <Row gutter={16}>
+          <Row gutter={18}>
             <Col {...colLayout}>
               <Form.Item label="Name">
                 {getFieldDecorator("name", {
@@ -59,7 +59,7 @@ class Reservation extends Component {
               </Form.Item>
             </Col>
             <Col {...colLayout}>
-              <Form.Item label="Phone number">
+              <Form.Item label="Phone">
                 {getFieldDecorator("phone", {
                   rules: [
                     {
@@ -71,7 +71,7 @@ class Reservation extends Component {
               </Form.Item>
             </Col>
             <Col {...colLayout}>
-              <Form.Item label="Phone number">
+              <Form.Item label="Phone">
                 {getFieldDecorator("phone", {
                   rules: [
                     {

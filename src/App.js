@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import "./App.sass";
+import "./App.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./components/Menu";
 import routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-widgets/dist/css/react-widgets.css';
 
 class App extends Component {
   render() {
