@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import { DatePicker, message, Row, Col, Form } from "antd";
+import { DatePicker, message, Row, Col, Form, Input, Button } from "antd";
 
 class Reservation extends Component {
   state = {
     date: null
-  };
-
-  handleChange = date => {
-    message.info(`Selected Date: ${date ? date.format("YYYY-MM-DD") : "None"}`);
-    this.setState({ date });
   };
 
   render() {
@@ -17,36 +12,84 @@ class Reservation extends Component {
     const formItemLayout = {
       labelCol: {
         xs: { span: 24 },
-        sm: { span: 8 }
+        sm: { span: 6 }
       },
       wrapperCol: {
         xs: { span: 24 },
-        sm: { span: 16 }
+        sm: { span: 12 }
       }
     };
 
-    const config = {
-      rules: [
-        { type: "object", required: true, message: "Please select time!" }
-      ]
+    const tailFormItemLayout = {
+      wrapperCol: {
+        xs: {
+          span: 24,
+          offset: 0
+        },
+        sm: {
+          span: 16,
+          offset: 8
+        }
+      }
+    };
+
+    const colLayout = {
+      xs: {
+        span: 24
+      },
+      sm: {
+        span: 12
+      },
+      lg: {
+        span: 8
+      } 
     };
 
     return (
-      <Form {...formItemLayout}>
-        <Col className="gutter-row" span={12}>
-          <Form.Item label="DatePicker">
-            {getFieldDecorator("date-picker", config)(<DatePicker />)}
+      <Row justify="center" style={{ minHeight: "100vh" }}>
+        <Form {...formItemLayout}>
+          <Row gutter={16}>
+            <Col {...colLayout}>
+              <Form.Item label="Name">
+                {getFieldDecorator("name", {
+                  rules: [
+                    { required: true, message: "Please input your phone name!" }
+                  ]
+                })(<Input style={{ width: "100%" }} />)}
+              </Form.Item>
+            </Col>
+            <Col {...colLayout}>
+              <Form.Item label="Phone number">
+                {getFieldDecorator("phone", {
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your phone number!"
+                    }
+                  ]
+                })(<Input style={{ width: "100%" }} />)}
+              </Form.Item>
+            </Col>
+            <Col {...colLayout}>
+              <Form.Item label="Phone number">
+                {getFieldDecorator("phone", {
+                  rules: [
+                    {
+                      required: true,
+                      message: "Please input your phone number!"
+                    }
+                  ]
+                })(<Input style={{ width: "100%" }} />)}
+              </Form.Item>
+            </Col>
+          </Row>
+          <Form.Item {...tailFormItemLayout}>
+            <Button type="primary" htmlType="submit">
+              Register
+            </Button>
           </Form.Item>
-        </Col>
-        <Col className="gutter-row" span={12}>
-          <Form.Item label="DatePicker[showTime]">
-            {getFieldDecorator(
-              "date-time-picker",
-              config
-            )(<DatePicker showTime format="YYYY-MM-DD HH:mm:ss" />)}
-          </Form.Item>
-        </Col>
-      </Form>
+        </Form>
+      </Row>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Icon, Input, Button, Checkbox, Row, Col, Card } from "antd";
-import "../Login/styles.scss";
+import "../Login/styles.sass";
 
 class LoginForm extends React.Component {
   handleSubmit = e => {
