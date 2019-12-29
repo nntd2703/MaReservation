@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Moment from 'moment' 
-import momentLocalizer from 'react-widgets-moment'; 
+import Moment from 'moment';
+import 'moment/locale/vi'
+import 'antd/dist/antd.css';
 
 Moment.locale('vi')
-momentLocalizer()
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

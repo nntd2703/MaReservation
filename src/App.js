@@ -11,6 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <Menu/>
           <Switch>{this.showContentMenu(routes)}</Switch>
         </div>
       </Router>

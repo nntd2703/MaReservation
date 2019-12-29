@@ -1,33 +1,57 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./styles.scss";
-import { DateTimePicker } from 'react-widgets';
+import { DatePicker, message, Row, Col, Form } from "antd";
 
-class ReservationComponent extends Component {
+class Reservation extends Component {
+  state = {
+    date: null
+  };
+
+  handleChange = date => {
+    message.info(`Selected Date: ${date ? date.format("YYYY-MM-DD") : "None"}`);
+    this.setState({ date });
+  };
+
   render() {
+    const { getFieldDecorator } = this.props.form;
+
+    const formItemLayout = {
+      labelCol: {
+        xs: { span: 24 },
+        sm: { span: 8 }
+      },
+      wrapperCol: {
+        xs: { span: 24 },
+        sm: { span: 16 }
+      }
+    };
+
+    const config = {
+      rules: [
+        { type: "object", required: true, message: "Please select time!" }
+      ]
+    };
+
     return (
-      <div>
-        <Container>
-          <Row>
-            <Col md={6} xs={12}>
-              <div className="reservation">
-                <div class="header">
-                  <span className="tit2">Reservation</span>
-                  <h3 className="tit3"> Book Table </h3>
-                </div>
-                <div className="form">
-                  <DateTimePicker defaultValue={new Date()} />
-                </div>
-              </div>
-            </Col>
-            <Col md={6} xs={12}>
-              <div className="image">Image will be display here</div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Form {...formItemLayout}>
+        <Col className="gutter-row" span={12}>
+          <Form.Item label="DatePicker">
+            {getFieldDecorator("date-picker", config)(<DatePicker />)}
+          </Form.Item>
+        </Col>
+        <Col className="gutter-row" span={12}>
+          <Form.Item label="DatePicker[showTime]">
+            {getFieldDecorator(
+              "date-time-picker",
+              config
+            )(<DatePicker showTime format="YYYY-MM-DD HH:mm:ss" />)}
+          </Form.Item>
+        </Col>
+      </Form>
     );
   }
 }
+const ReservationComponent = Form.create({ name: "reservation_component" })(
+  Reservation
+);
 
 export default ReservationComponent;
