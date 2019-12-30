@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "118f5d2be4b1a7a68ef53fcc468a402a",
+    "revision": "04cb779ab03d47c239294820975f200a",
     "url": "/MaReservation/index.html"
   },
   {
-    "revision": "ea62741ea584709c1c6c",
+    "revision": "6514a5dbb55cfa4ab753",
     "url": "/MaReservation/static/css/2.6f18afc6.chunk.css"
   },
   {
-    "revision": "7a96e620e8871696358b",
-    "url": "/MaReservation/static/css/main.a51f1b44.chunk.css"
+    "revision": "035ce40f79523358085d",
+    "url": "/MaReservation/static/css/main.9ef94a9d.chunk.css"
   },
   {
-    "revision": "ea62741ea584709c1c6c",
-    "url": "/MaReservation/static/js/2.71eb9ec3.chunk.js"
+    "revision": "6514a5dbb55cfa4ab753",
+    "url": "/MaReservation/static/js/2.d832c946.chunk.js"
   },
   {
-    "revision": "86afaa925e0f432774bf95b19b6933fb",
-    "url": "/MaReservation/static/js/2.71eb9ec3.chunk.js.LICENSE"
+    "revision": "29a1d98eb64b1e6d3217be6828297cfe",
+    "url": "/MaReservation/static/js/2.d832c946.chunk.js.LICENSE"
   },
   {
-    "revision": "7a96e620e8871696358b",
-    "url": "/MaReservation/static/js/main.70428850.chunk.js"
+    "revision": "035ce40f79523358085d",
+    "url": "/MaReservation/static/js/main.ba66bbb4.chunk.js"
   },
   {
     "revision": "71cf21de84b917881d6e",
