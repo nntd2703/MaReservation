@@ -3,8 +3,6 @@ import "./App.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "./components/Menu";
 import routes from './routes';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 class App extends Component {
   render() {
     return (
