@@ -5,12 +5,6 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-widgets/dist/css/react-widgets.css";
-import Moment from "moment";
-import "moment/locale/vi";
-import momentLocalizer from "react-widgets-moment";
-
-Moment.locale("en");
-momentLocalizer();
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

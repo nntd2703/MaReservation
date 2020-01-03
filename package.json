@@ -34,7 +34,6 @@
     "formik": "^2.0.8",
     "fs-extra": "^8.1.0",
     "gh-pages": "^2.1.1",
-    "globalize": "^1.4.2",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
